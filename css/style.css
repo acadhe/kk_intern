@@ -103,6 +103,25 @@ h2 > a:visited, a:link, a:active
 
 }
 
+.btn{
+  width: 100%;
+  text-align: left;
+  background-color:  #c0394d;
+  border: 0px;
+  padding-left: 15px; 
+  color: white;
+}
+.btn:hover{
+    background-color: #c0394d;
+    border-radius: 0px;
+}
+.btn:active, .btn.active {
+    box-shadow: none;
+    background-color: #c0394d;
+}
+.btn:focus {outline:0;
+background-color: #c0394d;} 
+
 #direct{
     background-color: #c0394d;
     text-align: left;
