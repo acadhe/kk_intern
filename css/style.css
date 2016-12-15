@@ -1,0 +1,357 @@
+body {
+ color:#404040;
+ margin:0;
+ padding:0;
+ -webkit-font-smoothing:antialiased;
+ display:block;
+font-family: 'Nunito', sans-serif;
+background-color: #193a4d;
+  overflow:hidden;
+
+}
+
+* {
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     box-sizing:border-box;
+}
+
+.sidebar {
+  position:absolute;
+  width:33.3333%;
+  height:100%;
+  top:0;
+  left:0;
+  overflow-x:hidden;
+  border-right:1px solid rgba(0,0,0,0.25);  
+
+
+}
+.pad2 {
+  padding:0px;
+}
+
+.map {
+  position:absolute;
+  left:33.3333%;
+  width:66.6666%;
+  top:0;
+  bottom:0;
+  height: 709px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 400;
+  line-height: 35px;
+  padding: 10px 2px 0 10px;
+}
+
+#htitle{
+  color: white;
+  text-decoration: none;
+  border-bottom: 0px;
+}
+
+h2 {
+  font-size: 1.0em;
+  margin: 0 0 0 0;
+  font-weight: 100;
+  line-height: 20px;
+  padding: 5px 2px 3px 10px;
+  /* rojo kota kita color: #c0394d;*/
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+h2 > a {
+  /* rojo kota kita color: #c0394d;*/
+  font-size: 1.1em;
+  color: #d7a245;
+  text-decoration: none;
+}
+
+h2 > a:hover {
+  color: #c0394d;
+  text-decoration: none;
+}
+
+h2 > a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.heading {
+  background:#0f2430;
+  min-height:80px;
+  line-height:80px;
+  color: white;
+  padding: 0px;
+}
+
+#logo-img{
+    background:url('../img/kk_logo.png') no-repeat;
+    background-size:contain;
+    width: 100px;
+    height: 40px;
+    margin-top: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+#direct{
+    background-color: #c0394d;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+#direct:hover{
+    background-color: #d7a245;
+}
+#direct > a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+
+#listings-title {
+  font-size: .8em;
+  margin: 0px;
+  padding: 5px 10px 0 10px;
+  color: white;
+  text-align: right;
+  background-color: #193a4d;
+}
+
+.listings {
+  height:100%;
+  overflow:auto;
+  bottom: 0;
+  background-color: #193a4d;
+  font-weight: 400;
+}
+
+.listings .item {
+  display:block;
+  border-bottom: 0.5px solid rgba(236, 236, 236, .3);
+  padding:10px;
+  color: white;
+}
+
+.listings .item:hover {
+  display:block;
+  padding:10px;
+  text-decoration:none;
+  background-color: #0f2430;
+}
+
+.listings .item:last-child { border-bottom:none; }
+.listings .item .title {
+  font-size: 1.3em;
+  display:block;
+  color:#f5b348;
+  font-weight:600;
+}
+
+.listings .item .title small { font-weight:100; }
+.listings .item.active .title,
+.listings .item .title:hover { color:#ef3f54; text-decoration: none;}
+.listings .item.active {
+  background-color:#0f2430;
+}
+.listings .item .rtitle {
+  font-size: .9em;
+  display:block;
+  position: relative;
+  color:#ef3f54;
+  font-weight:600;
+  margin-top: 8px;
+  text-decoration: none;
+  width: 14%;
+  padding-right: 4px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  left: 85%;
+  text-align: center;
+}
+
+.listings .item .rtitle:hover { background-color:#f5b348; color: white; text-decoration: none;}
+
+.listings .item .rtitle > a {
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  width:3px;
+  height:3px;
+  border-left:0;
+  background:rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-track {
+  background:none;
+}
+::-webkit-scrollbar-thumb {
+  background:#d7a245;
+  border-radius:0;
+}
+
+.marker {
+  border: none;
+  cursor: pointer;
+  height: 56px;
+  width: 56px;
+  background-image: url('../img/kk_pin.png');
+  background-size:contain;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(28px, 56px, 0);
+}
+
+.clearfix { display:block; }
+.clearfix:after {
+  content:'.';
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+
+}
+
+/* Marker tweaks */
+.mapboxgl-popup {
+  padding-bottom: 50px;
+
+}
+
+.mapboxgl-popup-close-button {
+  display:true;
+  font-size: 1.3em;
+}
+.mapboxgl-popup-content {
+  padding:0;
+  width:250px;
+
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding:1%;
+
+}
+.mapboxgl-popup-content h3 {
+  background:#f5b348;
+  color:#fff;
+  display:block;
+  padding:10px;
+  border-radius:3px 3px 0 0;
+  font-weight:700;
+  margin: -10px -10px 0 -10px;
+  font-size: 1.8em;
+}
+
+.mapboxgl-popup-content h4 {
+  margin:0;
+  display:block;
+  padding: 8px 0 5px 0;
+  font-weight:700;
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.mapboxgl-popup-content p {
+  margin:0;
+  display:block;
+  padding: 0px 0 1px 0;
+  font-weight:400;
+  margin: 0;
+  font-size: .7em;
+  color: gray;
+}
+.mapboxgl-popup-content a {
+  margin:0;
+  display:block;
+  font-weight:700;
+  margin: 0;
+  font-size: .8em;
+  color: #ef3f54;
+  text-decoration: none;
+  border: 1px solid gray;
+  width: 25%;
+  border-radius: 4px;
+  padding: 2px;
+  text-align: center;
+}
+.mapboxgl-popup-content a:hover {
+  background-color: #f5b348;
+  text-decoration: none;
+  color: white;
+}
+
+.mapboxgl-popup-content div {
+  padding:10px;
+}
+
+.mapboxgl-container .leaflet-marker-icon { 
+  cursor:pointer; 
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+  margin-top: 15px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+  border-bottom-color: #91c949;
+}
+
+/*large devices*/
+@media (min-width: 1200px){
+
+}
+/*medium devices*/
+@media (min-width: 992px) and (max-width: 1199px){
+     h1{
+        font-size: 1.7em;
+        line-height: 1;
+    }
+  .listings .item .rtitle {
+  font-size: .9em;
+  left: 0%;
+  text-align: center;
+  width: 20%;
+
+}
+
+}
+/*small devices*/
+@media (min-width: 768px) and (max-width: 991px){
+
+     h1{
+        font-size: 1.7em;
+        line-height: 1;
+    }
+
+    .listings .item .rtitle {
+  font-size: 1.5em;
+  left: 0%;
+  text-align: center;
+  width: 30%;
+}
+}
+/*extra small devices*/
+@media (max-width: 767px){
+
+     h1{
+        font-size: 1.7em;
+        line-height: 1;
+    }
+
+    .listings .item .rtitle {
+  font-size: 1.5em;
+  left: 0%;
+  text-align: center;
+  width: 100%;
+}
+}
