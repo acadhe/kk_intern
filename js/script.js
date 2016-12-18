@@ -42,7 +42,8 @@
             "localization":"Banjarmasin",
             "lat":-3.318607,
             "lon":114.594378,
-            "ref":"projects/banjarmasin.html"
+            "ref":"projects/banjarmasin.html",
+            "source":"https://www.youtube.com/embed/c1kW6eaJURY"
          }
       },
       {  
@@ -208,13 +209,27 @@
       }); 
   }
 
+  /* Extent map button
+  $("myextent").click(function(){
+      map.flyTo({
+        center: [112.407558, -5.093789],
+        zoom: 6
+      }); 
+    });*/
+
+
   function createPopUp(currentFeature) {
     var popUps = document.getElementsByClassName('mapboxgl-popup');
     if (popUps[0]) popUps[0].remove();
 
-    var alink = document.createElement('a');
+/*var alink = document.createElement('a');
       alink.href = currentFeature.properties.ref;
       alink.className = 'alink';
+
+  var aiframe = document.createElement('iframe');
+      aiframe.src = currentFeature.properties.source;
+      aiframe.width = '100%';
+      aiframe.height = '100px';*/
 
 
     var popup = new mapboxgl.Popup({closeOnClick: false})
@@ -252,6 +267,12 @@
       rlink.className = 'rtitle';
       rlink.dataPosition = i;
       rlink.innerHTML = "Report"; 
+
+      /*var aiframe = listing.appendChild(document.createElement('iframe'));
+      aiframe.src = prop.source;
+      aiframe.width = '100%';
+      aiframe.height = '200px';*/
+
 
       link.addEventListener('click', function(e){
         // Update the currentFeature to the store associated with the clicked link

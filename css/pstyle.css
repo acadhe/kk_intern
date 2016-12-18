@@ -64,8 +64,14 @@ body{
           padding: 0;
         }
 
-        iframe{
-          border: 0px;
+       iframe {
+          border: 10px solid #0f2430;
+          border-radius: 5px;       
+           }
+
+         #home-tiles iframe{
+          border: 5px solid #c6c6c6;
+          border-radius: 5px;
           margin-bottom:40px; 
           margin-top: 20px;
         }

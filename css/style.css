@@ -22,13 +22,15 @@ background-color: #193a4d;
   height:100%;
   top:0;
   left:0;
-  overflow-x:hidden;
-  border-right:1px solid rgba(0,0,0,0.25);  
-
-
+  overflow:scroll;
+  overflow-x:hidden; 
+  border-right:1px solid rgba(0,0,0,0.25); 
+}
+.sidebar:last-child {
+  margin.bottom: 100px;
 }
 .pad2 {
-  padding:0px;
+  padding-bottom:0px;
 }
 
 .map {
@@ -149,10 +151,10 @@ background-color: #c0394d;}
 
 .listings {
   height:100%;
-  overflow:auto;
   bottom: 0;
   background-color: #193a4d;
   font-weight: 400;
+  overflow: auto;
 }
 
 .listings .item {
@@ -204,6 +206,7 @@ background-color: #c0394d;}
 .listings .item .rtitle > a {
   background-color: white;
 }
+
 
 ::-webkit-scrollbar {
   width:3px;
