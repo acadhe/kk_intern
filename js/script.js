@@ -205,7 +205,7 @@
   function flyToStore(currentFeature) {
     map.flyTo({
         center: currentFeature.geometry.coordinates,
-        zoom: 10
+        zoom: 11
       }); 
   }
 
