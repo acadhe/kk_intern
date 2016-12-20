@@ -5,19 +5,153 @@
       <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
       <title>KK Arturo</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" type="image/png" href="../img/kk_pin.png"/>      
+      <link rel="shortcut icon" type="image/png" href="../img/kk_pin.png"/>
       <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,800" rel="stylesheet">
       <!--<style type="text/css">
         /*center the tabs
         /*http://stackoverflow.com/questions/9421966/how-do-i-center-the-twitter-bootstrap-tabs-on-the-page*/
+      
       <script src="../js/jquery-2.1.4.min.js"></script>
       <script src="../js/bootstrap.min.js"></script>
       <link rel="stylesheet"  href="../css/bootstrap.min.css">
-      </style>  -->
-       <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">   
+      </style>-->
+      <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet"  href="../css/pstyle.css">
+
+      <!--<style type="text/css">
+        body{
+          font-family: 'Nunito', sans-serif;
+          background:#0f2430;
+              }
+        #header-nav{
+          padding: 0px;
+          background:#0f2430;
+          border: 0px;
+        }
+        .navbar{
+          width: 100%;
+          padding: 0px;
+          border-radius: 0px;
+        }
+
+        .panel-heading a{
+          color:#c0394d;
+          font-size: 1.1em;
+          text-decoration: none;
+          margin-right: 15px;
+          border: 1px solid rgba( 250,250,250, .2);
+          padding: 10px;
+        }
+
+        .panel-heading a:hover{
+          color:#d7a245;
+          font-size: 1.1em;
+          text-decoration: none;
+        }
+
+        .navbar h1{
+          color: #d7a245;
+          font-size: 4em;
+        }        
+        .nav-tabs > li, .nav-pills > li {
+        float:left;
+        display:inline-block;
+        *display:inline; /* ie7 fix */
+        zoom:1; /* hasLayout ie7 trigger */
+        font-size: 1.3em;
+        }
+         strong{
+          color:#c0394d ;
+        }
+
+        .panel-danger{
+          margin: 10px 0px 50px 0px;
+          background-color: #193a4d; 
+          border: 0px;
+          color: rgba( 250,250,250, .8);
+          font-weight: 0;
+          line-height: 1.5;
+          text-align: justify;
+          font-size: 1.4em;
+          padding: 0 30px 0 30px;
+        }
+
+        .panel-danger  h4{
+          font-size: 1.4em;
+          font-weight: 400;
+          margin-bottom: 0px;
+          margin-left: 15px;
+          color:#d7a245;
+          padding: 0;
+        }
+
+        iframe{
+          border: 0px;
+          margin-bottom:40px; 
+          margin-top: 20px;
+        }
+
+        #myTabs > li{
+          border-radius: 0px 0px 0 0 ;
+          border: 0px;
+        }
+        .nav-tabs, .nav-pills {
+        text-align:center;
+        }
+        #pagination {
+          margin: 50px 0 50px 0;
+        }
+        #pagination a{
+          color: #c0394d;
+          font-weight: bold;
+          font-size: .7em;
+        }
+
+
+        /*large devices*/
+        @media (min-width: 1200px){
+
+        }
+        /*medium devices*/
+        @media (min-width: 992px) and (max-width: 1199px){
+        }
+        /*small devices*/
+        @media (min-width: 768px) and (max-width: 991px){
+        }
+        /*extra small devices*/
+        @media (max-width: 767px){
+          .navbar{
+            height: 210px;
+          }
+          .panel-heading a{
+          font-size: .9em;
+          padding: 4px;
+          float: right;
+          }
+          .panel-heading a:hover{
+          font-size: .9em;
+          }
+          .navbar h1{
+            font-size: 3em;
+            float: middle;
+            text-align: left;
+          }        
+          .nav-tabs > li, .nav-pills > li {
+          font-size: 1em;
+          float: middle;
+          }
+
+          .panel-danger{
+            font-size: 1.1em;
+            padding: 0px;
+          }
+          .panel-danger h4{
+            font-size: 1.3em;
+          }
+        }        
+      </style>-->
     </head>
   <body>
     <header>
@@ -28,14 +162,14 @@
               <br>
               <div class="panel-heading" id="syllabus">
                 <a  href="../index.html" class ="navbar-right"> Back to Map</a>
-                <h1 class="text-left text-primary hidden-xs"> City Scale Mapping</h1>
-                <h1 class="text-center text-primary visible-xs">City Scale Mapping</h1>
-                <h2 class="text-left text-primary hidden-xs">Banjarmasin</h1>
+                <h1 class="text-left text-primary hidden-xs">Heritage dan Perubahan Kota Solo</h1>
+                <h1 class="text-center text-primary visible-xs">Heritage dan Perubahan Kota Solo</h1>
+                <h2 class="text-left text-primary hidden-xs">Surakarta</h1>
                 <br><br>
                 <div class="tabbable" >
                   <ul class="nav nav-tabs" id="myTabs">
                     <li class="active"><a href="#p1" data-toggle="tab"><strong>Notes</strong></a></li>
-                    <li><a href="#p2" data-toggle="tab"><strong>Photos</strong></a></li>
+                    <li><a href="#p2" data-toggle="tab"><strong>Media</strong></a></li>
                     <li><a href="#p3" data-toggle="tab"><strong>Video</strong></a></li>
                     <li><a href="#p4" data-toggle="tab"><strong>Maps & Data</strong></a></li>
                   </ul>
@@ -53,13 +187,15 @@
           <div class="panel-body">
             <div class="tab-content">
               <div class="tab-pane fade  in active " id="p1">
-                <h4>PAGE 1</h4> <br>
+                <h4>Based on Rizqa's notes and Solo's session</h4> <br>
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan ligula velit, et tristique orci posuere ut. Nunc sed nisi lacinia, lobortis eros ac, dapibus purus. In luctus leo ante, quis pharetra enim elementum nec. Nam tincidunt egestas elit at efficitur. Quisque ut mollis dolor. Vestibulum ullamcorper semper faucibus. Aliquam vestibulum pharetra turpis. Nam dignissim nisi et purus placerat luctus. Aliquam nec condimentum leo. Cras quis scelerisque nunc, pharetra scelerisque quam. Duis dignissim quam non ligula varius fringilla. Aliquam suscipit egestas ante in fringilla. Ut interdum, lacus sed congue pharetra, sem ipsum tempus odio, eu condimentum sapien enim eu metus. Nulla convallis arcu ut urna scelerisque eleifend. Aliquam nec purus sed dolor ultricies aliquam sed nec nulla. Nulla ut ante eget orci bibendum pellentesque quis condimentum massa.
-                  Suspendisse varius cursus mi ac gravida. Etiam varius pharetra ante, placerat cursus erat posuere sed. Donec consequat nibh sed eros rutrum lobortis. Cras turpis odio, tempor vitae vestibulum at, pulvinar eu diam. Phasellus facilisis finibus ligula, et volutpat purus interdum at. Pellentesque feugiat nisl libero, vitae consectetur diam volutpat vitae. In semper vehicula fermentum. Vivamus rutrum pretium lacus id egestas. Vestibulum pellentesque ultrices varius. Sed vitae ex eu mi faucibus suscipit ac non quam. Nullam vitae ante ex. Fusce placerat, sapien vitae imperdiet tincidunt, justo urna pulvinar ex, in tincidunt dolor diam vehicula urna. Nunc ex est, convallis eu tristique vulputate, pellentesque eu augue.
-                  Praesent et lorem augue. Nam tincidunt ipsum velit, sit amet condimentum enim maximus id. Maecenas hendrerit consequat est, ac blandit purus. Phasellus sem massa, feugiat auctor sollicitudin quis, malesuada quis lacus. Duis commodo venenatis pharetra. Morbi a odio sit amet mi tristique gravida. Nam semper felis vitae quam dapibus luctus.
-                  Mauris eu porttitor felis, ut pulvinar metus. Etiam at massa vitae massa elementum tempor quis at erat. Duis pretium tempus sem, sit amet blandit turpis eleifend a. Vivamus bibendum neque risus, et egestas erat auctor a. Nunc pulvinar pellentesque condimentum. Aenean non magna elit. In hac habitasse platea dictumst. Sed accumsan gravida metus, eget malesuada tellus placerat sed. Vivamus posuere tortor enim, id tempus lectus blandit maximus. Proin dictum, quam a ullamcorper tincidunt, purus orci cursus felis, id laoreet est elit vel nulla.
-                  Aliquam eget enim quam. Morbi faucibus vitae dolor non fringilla. Morbi eget cursus purus. Donec velit purus, dignissim in libero mattis, molestie scelerisque justo. Nullam hendrerit in nunc et laoreet. Integer vestibulum neque ac mi vestibulum condimentum. Donec nec quam nisi. Integer ac mauris sit amet est egestas sagittis vel et quam. Fusce suscipit neque a mauris commodo, eget feugiat felis maximus.
+                 <b>The Urban Citizenship Academy “Lokalatih III Forum Komunitas Hijau”</b> was held in 7-9 November 2016 in Surakarta, in collaboration between the Ministry of Public Works and Kota Kita. This training attended by around 35 participants from 10 cities and regions in Indonesia including Sabang (Aceh), Dharmasraya (Sumatra Barat), Bengkulu, Palembang (Sumatera Selatan), Tebo (Jambi), Hulu Hilir Selatan (Kalimantan), Banjarbaru (Kalimantan), Tapin (Kalimantan), Tulungagung (Jawa Timur), Bima (Nusa Tenggara Barat).  The training was a three-day training, as the last part from 3 series of training, focusing on the development of advocacy tools. After they collected data (Training I) and decide what the intervention they want to take (Training 2), in Training 3, the participants learn to construct maps and infographics to communicate their findings and message to a wider audience, and to construct a compelling narrative to garner support. </br> </br>
+                 <b>Core Activities:</b></br>
+                 • Stakeholder analysis: the participants identify stakeholders and analyze their power and interest in supporting the projects. </br>
+                 • Communication strategies: (1) exercise to develop concise key message of the project and (2) exercise to deliver the message in through ‘elevator pitch exercise’ </br>
+                 • Data visualization – Key principles in visualizing the data: infographics, maps, composition, etc. 
+                 UCA concludes with a graduation ceremony in which they have a public platform to present these materials to stakeholders and local government representatives.
+
                   <div id="pagination" class="text-center">
                     <ul class="pagination  pagination-lg">
                       <li class="active"><a href="#p1">Report</a></li>
@@ -79,53 +215,42 @@
                 <div class="col-sm-12 col-md-12 col-lg-12">
                    <div id="home-tiles" class="row">
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIdWw4dE56R3BlXzg/preview" width="500" height="285"></iframe>
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIT2R0WWhBeGNhRFk/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIejFwVjF5bXdTeW8/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIa1BmcFh4aGlOTWc/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIbU1hS1dlell1a1U/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIWXc0VjZGMHY0eWs/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIdzJOeHdzV195OGs/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIcnd6RnkwRkt1TGc/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIbWZrbXlnc2pWVVU/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIM0lSNExJbGN0aHM/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIYkRwY2czMVdiMEU/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIbXNHLXpLX2MwaU0/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIbTdETUt2eDEyb00/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIY093UTRITkltS2M/preview" width="500" height="285"></iframe>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbITlowaDdTaUNXWms/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIcHNaeXYwUzdtcjA/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIYXAwUXd4SElZbVU/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIclhFNENqVmNQODg/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIdFRlQmdwNm00dUU/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIWm1WUFR4R1lwa2M/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIS3dlcnd1VjBLdjA/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIREl1cnEzel9GWjg/preview" width="500" height="285"></iframe>  
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIbnVGQzhPd3BnLW8/preview" width="500" height="285"></iframe>  
+                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbINHp0SnNyUjRMdHc/preview" width="500" height="285"></iframe>  
                         </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIVUZrSHFhNUlTeGc/preview" width="500" height="285"></iframe>  
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIb2Jpcnd6T3Jfck0/preview" width="500" height="285"></iframe>  
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIdkNOZm5HSVBqc1k/preview" width="500" height="285"></iframe>  
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <iframe src="https://drive.google.com/file/d/0B61IgjDYTmbIbVJwX3pXSXNyTzA/preview" width="500" height="285"></iframe>  
-                        </div>
+                        
                     </div> 
                   <div id="pagination" class="text-center">
                     <ul class="pagination  pagination-lg">
@@ -141,7 +266,7 @@
               <!-- ---------------- ---------------- 
                 ----------------     tab 3 ----------------  
                    ---------------- ------------------>   
-               <div class="tab-pane fade " id="p3">
+              <div class="tab-pane fade " id="p3">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                    <div id="home-tiles" class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12 ivideo">
@@ -167,16 +292,16 @@
                 ----------------     tab 4 ----------------  
                    ---------------- ------------------>   
               <div class="tab-pane fade" id="p4">
-                <h4> Tracking a boat trip through Martapura River to Floating Market</h4>
+                <h4> Cycling Heritage Route</h4>
                 <div class="col-sm-12 col-md-12 col-lg-12"> 
-                The activity took part on November 5th 2016. Flocktracker app was used in order to test offline campabilities and it's acuracy while navigating in the river. 
-                </div>           
+                Click on the map icons to see information about each building. The animation layer (red points) is an animation from GPS tracking while cycling. The line (yellow) is the result of joining all tracking points so it represents the comple route. The activity took part in Surakarta on December 18 2016. Flocktracker </br>
+                </div>
                 <div class="col-lg-12 voffset2">
-                  <iframe width="100%" height="520" frameborder="0" src="https://acadhe.carto.com/viz/720942a8-a49e-11e6-be4b-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                  <iframe width="100%" height="520" frameborder="0" src="https://acadhe.carto.com/viz/1a1243be-c53d-11e6-9f25-0ef7f98ade21/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
                   <div id="pagination" class="text-center">
                     <ul class="pagination  pagination-lg">
                       <li class="active"><a href="#p1">Report</a></li>
-                      <li><a onclick='switchTab("#p2")'>Media</a></li>
+                      <li><a onclick='switchTab("#p2")' >Media</a></li>
                       <li><a onclick='switchTab("#p3")'>Video</a></li>
                       <li><a onclick='switchTab("#p4")'>Map&Data</a></li>
                     </ul>
@@ -243,7 +368,7 @@
         ..........................................................-->    
     </div>
     <script src="../js/pscript.js"></script>
-    <!--<script src="../js/jquery-2.1.4.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>-->
-    </body>
+     
+    </script>
+  </body>
   </html>

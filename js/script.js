@@ -150,6 +150,27 @@
             "lon":110.824327,
             "ref":"projects/dis-solo.html"
          }
+      },
+      {  
+         "type":"Feature",
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+                110.8093071,
+                -7.56706033
+            ]
+         },
+         "properties":{  
+            "cartodb_id":7,
+            "id":"a7",
+            "name":"Heritage dan Perubahan Kota Solo",
+            "partner":"Balai Sodejatmoko",
+            "type":"Ciclyng Route",
+            "localization":"Solo",
+            "lat":-7.56706033,
+            "lon":110.8093071,
+            "ref":"projects/heritage-solo.html"
+         }
       }
    ]
 };
