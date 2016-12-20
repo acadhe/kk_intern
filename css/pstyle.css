@@ -64,6 +64,37 @@ body{
           padding: 0;
         }
 
+        .ivideo{
+          border: 10px solid #0f2430;
+          border-radius: 10px 10px 20px 20px;   
+          padding: 0px;
+          margin-top: 20px;
+          background: #0f2430;
+        }
+
+        .ivideo-desc{
+          padding: 0px 0px 0px 15px;
+          margin: 0px;
+        }
+
+        .ivideo-desc h3{
+          color: #d7a245;
+          line-height: .8;
+          font-weight: bold;
+          font-size: 1.5em;
+        }
+
+        .ivideo-desc p{
+          line-height: .9;
+        }
+
+        #p3 .ivideo iframe {
+          border: 0px;
+          border-radius: 0px;  
+          margin: 0px; 
+          padding: 0px;
+        }
+
        iframe {
           border: 10px solid #0f2430;
           border-radius: 5px;       
