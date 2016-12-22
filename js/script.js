@@ -66,27 +66,6 @@ if (!mapboxgl.supported()) {
          "geometry":{  
             "type":"Point",
             "coordinates":[  
-               110.3957,
-               -7.784922
-            ]
-         },
-         "properties":{  
-            "cartodb_id":2,
-            "id":"a2",
-            "name":"Urban Citizenship Academy",
-            "partner":"Universitas Islam Negeri",
-            "type":"Workshop/Education",
-            "localization":"Jogja",
-            "lat":-7.784922,
-            "lon":110.3957,
-            "ref":"projects/uca-jogja.html"
-         }
-      },
-      {  
-         "type":"Feature",
-         "geometry":{  
-            "type":"Point",
-            "coordinates":[  
                110.774009,
                -7.544259
             ]
@@ -101,6 +80,27 @@ if (!mapboxgl.supported()) {
             "lat":-7.544259,
             "lon":110.774009,
             "ref":"projects/uca-hijau.html"
+         }
+      },
+      {  
+         "type":"Feature",
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               110.3957,
+               -7.784922
+            ]
+         },
+         "properties":{  
+            "cartodb_id":2,
+            "id":"a2",
+            "name":"Urban Citizenship Academy",
+            "partner":"Universitas Islam Negeri",
+            "type":"Workshop/Education",
+            "localization":"Jogja",
+            "lat":-7.784922,
+            "lon":110.3957,
+            "ref":"projects/uca-jogja.html"
          }
       },
       {  
