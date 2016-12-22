@@ -21,15 +21,12 @@ overflow:hidden;
   height:100%;
   top:0;
   left:0;
-  overflow-y:auto;
-  overflow-x:hidden; 
+  overflow: hidden;
   border-right:1px solid rgba(0,0,0,0.25); 
 }
-.sidebar:last-child {
-  margin.bottom: 100px;
-}
+
 .pad2 {
-  padding-bottom:0px;
+  padding-bottom:200px;
 }
 
 .map {
@@ -150,10 +147,11 @@ background-color: #c0394d;}
 
 .listings {
   height:100%;
-  bottom: 0;
   background-color: #193a4d;
   font-weight: 400;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+
 }
 
 .listings .item {
@@ -170,7 +168,6 @@ background-color: #c0394d;}
   background-color: #0f2430;
 }
 
-.listings .item:last-child { border-bottom:none; padding-bottom: 30px; }
 .listings .item .title {
   font-size: 1.3em;
   display:block;
@@ -204,6 +201,21 @@ background-color: #c0394d;}
 
 .listings .item .rtitle > a {
   background-color: white;
+}
+
+.rtype{
+  color: white;
+  font-weight: 400;
+}
+
+#locicon{
+  background: url('../img/locicon.png') no-repeat;
+  height: 15px;
+  width: 15px;
+  background-size:contain;
+  position: relative;
+  opacity: .6;
+  margin-top: 2px;
 }
 
 

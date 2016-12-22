@@ -7,8 +7,7 @@
     };
   }
 
-  mapboxgl.accessToken = 'pk.eyJ1IjoiYWNhZGhlIiwiYSI6IllHYWhiSUEifQ.al-_5fA7j3QPv54YJSTyOQ';
-
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWNhZGhlIiwiYSI6IllHYWhiSUEifQ.al-_5fA7j3QPv54YJSTyOQ';
 
 if (!mapboxgl.supported()) {
     alert('Your browser does not support Mapbox GL, please update the last version or open it in Chrome or Safari');
@@ -76,7 +75,7 @@ if (!mapboxgl.supported()) {
             "id":"a2",
             "name":"Urban Citizenship Academy",
             "partner":"Universitas Islam Negeri",
-            "type":"UCA",
+            "type":"Workshop/Education",
             "localization":"Jogja",
             "lat":-7.784922,
             "lon":110.3957,
@@ -97,7 +96,7 @@ if (!mapboxgl.supported()) {
             "id":"a3",
             "name":"Urban Citizenship Academy",
             "partner":"Kota Hijau",
-            "type":"UCA",
+            "type":"Workshop/Education",
             "localization":"Solo",
             "lat":-7.544259,
             "lon":110.774009,
@@ -118,7 +117,7 @@ if (!mapboxgl.supported()) {
             "id":"a4",
             "name":"Urban Social Forum",
             "partner":"USF",
-            "type":"USF",
+            "type":"Forum",
             "localization":"Semarang",
             "lat":-6.992139,
             "lon":110.419239,
@@ -139,7 +138,7 @@ if (!mapboxgl.supported()) {
             "id":"a5",
             "name":"Right to the City Workshop",
             "partner":"Institute of Policy",
-            "type":"USF",
+            "type":"Workshop",
             "localization":"Semarang",
             "lat":-6.979231,
             "lon":110.411627,
@@ -181,7 +180,7 @@ if (!mapboxgl.supported()) {
             "id":"a7",
             "name":"Heritage dan Perubahan Kota Solo",
             "partner":"Balai Sodejatmoko",
-            "type":"Ciclyng Route",
+            "type":"Data Collection",
             "localization":"Solo",
             "lat":-7.56706033,
             "lon":110.8093071,
@@ -293,17 +292,28 @@ if (!mapboxgl.supported()) {
       link.href = '#';
       link.className = 'title';
       link.dataPosition = i;
-      link.innerHTML = prop.name;     
-      
+      link.innerHTML = prop.name ;     
+
+      var rtype = listing.appendChild(document.createElement('div'));
+      rtype.className = 'rtype';
+      rtype.innerHTML = prop.type; 
+
+      var loca = listing.appendChild(document.createElement('div'));
+      loca.className = 'pull-left'
+      loca.id = 'locicon'
+
       var details = listing.appendChild(document.createElement('div'));
       details.innerHTML = prop.localization;
-      
+      details.style = 'opacity:.5'
+
       var rlink = listing.appendChild(document.createElement('a'));
       rlink.href = prop.ref;
       rlink.target = '_blank';
       rlink.className = 'rtitle';
       rlink.dataPosition = i;
       rlink.innerHTML = "Report"; 
+
+      
 
       /*var aiframe = listing.appendChild(document.createElement('iframe'));
       aiframe.src = prop.source;
