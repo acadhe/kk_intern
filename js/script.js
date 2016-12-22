@@ -9,7 +9,11 @@
 
   mapboxgl.accessToken = 'pk.eyJ1IjoiYWNhZGhlIiwiYSI6IllHYWhiSUEifQ.al-_5fA7j3QPv54YJSTyOQ';
 
-  // This adds the map
+
+if (!mapboxgl.supported()) {
+    alert('Your browser does not support Mapbox GL, please update the last version or open it in Chrome or Safari');
+} else {
+// This adds the map
   var map = new mapboxgl.Map({
     // container id specified in the HTML
     container: 'map', 
@@ -19,7 +23,19 @@
     center: [112.407558, -5.093789],   
     // initial zoom
     zoom: 6
-  });
+  });}
+
+  /*// This adds the map
+  var map = new mapboxgl.Map({
+    // container id specified in the HTML
+    container: 'map', 
+    // style URL
+    style: 'mapbox://styles/mapbox/outdoors-v10', 
+    // initial position in [long, lat] format
+    center: [112.407558, -5.093789],   
+    // initial zoom
+    zoom: 6
+  });*/
 
   var stores = {
    "type":"FeatureCollection",
