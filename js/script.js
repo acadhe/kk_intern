@@ -186,6 +186,27 @@ if (!mapboxgl.supported()) {
             "lon":110.8093071,
             "ref":"projects/heritage-solo.html"
          }
+      },
+      {  
+         "type":"Feature",
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+                110.8376983,
+                -7.5836333
+            ]
+         },
+         "properties":{  
+            "cartodb_id":8,
+            "id":"a8",
+            "name":"Substandard house data collection survey 2016",
+            "partner":"Committee of poverty alleviation of Solo",
+            "type":"Data Collection",
+            "localization":"Solo",
+            "lat": -7.5836333,
+            "lon":110.8376983,
+            "ref":"projects/rtlh.html"
+         }
       }
    ]
 };
