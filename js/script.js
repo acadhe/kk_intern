@@ -266,6 +266,15 @@ if (!mapboxgl.supported()) {
       }); 
   }
 
+
+document.getElementById('map_ext').addEventListener('click', function() {
+map.flyTo({
+        center:[112.407558, -5.093789],
+        zoom: 6
+      }); 
+});
+
+
   /* Extent map button
   $("myextent").click(function(){
       map.flyTo({
