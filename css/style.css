@@ -29,6 +29,22 @@ overflow:hidden;
   padding-bottom:200px;
 }
 
+#map_ext{
+  background: url('../img/map_ext_icon.png') no-repeat;
+  background-color: #0f2430;
+  background-size:contain;
+  border-radius: 5px;
+  border: 1px solid #0f2430;
+  width: 35px;
+  height: 35px;
+  left:35.3333%;
+  top:10px;
+  bottom:0;
+  position:absolute;
+  text-align: center;
+  z-index: 10;
+}
+
 .map {
   position:absolute;
   left:33.3333%;
@@ -137,11 +153,11 @@ background-color: #c0394d;}
 }
 
 #listings-title {
-  font-size: .8em;
+  font-size: .9em;
   margin: 0px;
   padding: 5px 10px 0 10px;
   color: white;
-  text-align: right;
+  text-align: center;
   background-color: #193a4d;
 }
 
